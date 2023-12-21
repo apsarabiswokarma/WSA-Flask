@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello_world():
-    return "<h1>Hello World</h1>  <h2>Welcome to Our Web Services and Apllication sections.</h2> <p> We will learn web development together</P>"
+def index():
+    return render_template("index.html")
 
 
 @app.route("/login")

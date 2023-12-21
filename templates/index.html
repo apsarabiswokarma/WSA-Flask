@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Web Service and Application</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #46474b;
+      color: white;
+    }
+
+    header {
+      background-color: #46474b;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    section {
+      text-align: center;
+      margin: 2em auto;
+      padding: 1em;
+      background-color: #46474b;
+
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    .tech-images {
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #4285f4;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #357ae8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #46474b;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Learn Web Services and Application</h1>
+  </header>
+
+  <section>
+    <img
+      src="data:image/jpeg;base64,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"
+      alt="Tech Image 1" class="tech-images">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfBi2TWzDgSIyVhFDIvkT5Ar-KSvJp8d7sA60UwoXGHRiBnWziQLczWT2G4YlEqoqamfs&usqp=CAU"
+      alt="Tech Image 2" class="tech-images">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJW0TOObqSG1LsXxFqFEIqC2PfUCnz1CJgw&usqp=CAU"
+      alt="Tech Image 3" class="tech-images">
+
+
+    <p>Embark on a journey of self-discovery and skill mastery as you learn the ins and outs of web service and
+      application development. Join our community of learners today and take the first step towards becoming a
+      proficient web developer.</p>
+
+    <a href="http://127.0.0.1:5000/login" class="cta-button">Get Started</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Learn Web Service and Application</p>
+  </footer>
+</body>
+
+</html>
