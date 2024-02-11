@@ -1,4 +1,5 @@
 # Flask
+
 [flask cheat sheet](https://www.codewithharry.com/blogpost/flask-cheatsheet/)
 
 # Flask Practice
@@ -7,8 +8,8 @@
 
 Flask is a highly used Python micro Web Framework. It provides basic functionality to build web applications, like routing, request/response handling, etc. It's a "small" framework compared to other ones (like Django), but in many cases that's a great advantage.
 
-
 ## Install Instructions
+
 Fork this repo and create a new cloud9 workspace as we do with other projects. Then follow the usual steps:
 
 ```bash
@@ -16,20 +17,17 @@ $ mkvirtualenv flask-practice -p /usr/bin/python3
 $ pip install -r requirements.txt
 ```
 
-
 ## Running the app server
 
 Flask framework provides, out of the box, a way to run a development web server in your local machine. Just execute the `run_app.py` script available in the project and the application will stay listening at `localhost:8080`. (Make sure to have all the requirements previously installed)
 
 ```bash
-$ python run_app.py
+$ python3 run_app.py
 ```
-
 
 ## Running tests
 
 Tests are split among several functions. You can run them all together doing `pytest tests.py` or select individual based on keyword expressions like `pytest -k 'test_1' tests.py`.
-
 
 ## Tasks
 

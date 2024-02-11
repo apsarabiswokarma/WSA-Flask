@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Payload Submission</title>
+</head>
+
+<body>
+  <h1>Add User Data via JSON Payload</h1>
+
+  <label for="title">Name:</label>
+  <input type="text" id="name" required><br>
+
+  <label for="category">Age:</label>
+  <input type="text" id="age" required><br>
+
+  <button type="button" onclick="submitJson()">Submit JSON</button>
+
+  <script>
+    function submitJson() {
+      const data = {
+        "name": document.getElementById("name").value,
+        "age": document.getElementById("age").value,
+      };
+
+      fetch('/add-user', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+  </script>
+
+</body>
+
+</html>
